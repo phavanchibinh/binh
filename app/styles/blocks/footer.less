@@ -1,0 +1,218 @@
+footer {
+  padding: 1rem;
+  
+     .container-block{
+	    margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    .block{
+		    padding-left: 15px;
+	        margin-top: 87px;
+	        padding-right: 30px;
+	    }
+	    .sub1{
+	    	height: 100px;
+	      
+	        .item1{
+	        	img{
+	        		display: none;
+	        	 }
+	        	.txt{
+	        		line-height: 22px;
+	        		font-size: 1.4rem;
+				    color: #5b5950;
+				    font-family: "HelveticaNeueLTStd-Lt", sans-serif;
+	        	 }
+	         }
+	     }
+	    .sub2{
+	    	height: 100px;
+
+	    	font-family: 'HelveticaNeue-Regular';
+	    	a{
+	    	   color: #5b5950;	
+	    	   font-size: 1.5rem;
+	    	}
+	        li{
+	        	line-height: 30px;
+	        	float: left;
+	        	
+	         }
+
+	    }
+	    .sub3{
+	    	height: 100px;
+	    	float: right;
+	    
+	    	.link{
+	    	    img{
+	        	  display: block;
+	        	  padding-left: 15px;
+	            }
+
+	            li{
+	        	   display: inline-block;
+	            }
+	        }
+
+	        .search{
+	        	.title{
+	        		padding-top: 20px;
+	        		padding-left: 20px;
+	        		font-family: 'Avera-Sans-Bold';
+	        	}
+	        	img{
+	        		display: none;
+	        	}
+
+	        	.block{
+				    height: 40px;
+				    margin: auto;
+				    border-radius: 5px;
+				    background-image: url(../images/bg-search1.jpg);
+				    background-size: 100% 100%;
+				    margin-top: 10px;
+				    margin-left: 20px;
+				    input{
+				    	border: none;
+					    background-color: transparent;
+					    height: 38px;
+					    text-indent: 20px;
+					   
+			        }
+			        label{
+			        	display: none;
+			         }
+			        button{
+			        	float: right;
+					    top: 0;
+					    right: 0;
+					    height: 40px;
+					    width: 75px;
+					    border: none;
+					    background-color: transparent;
+					    color: #5b5950;	
+					    border-radius: 5px;
+					    background-size: 100% 100%;
+			
+			        }
+			     }
+	        }
+
+	     
+	    }
+	       .bottom{
+    			font-size: 11px;
+    			float: left;
+    			margin-top: 100px;
+    			width: 100%;
+    			height: 50px;
+    			color: #5b5950;	
+    			line-height: 50px;
+	            .item{
+	            	float: left;
+	            	width: 50%;
+	            	
+	        	    li {
+	        		  display: inline-block;
+	        		  margin-right: 20px;
+	        	    }
+	        	    a{
+	        	    	color: #5b5950;	
+	        	    }
+	            }
+	             
+	         }
+    }           .copy{
+    				width: 50%;
+    				float: right;
+	             	p{
+	             		text-align: right;
+	                }
+	             }
+}
+@media only  screen and(min-width: 1200px){
+	footer {
+        .container-block{
+      	 max-width:  1160px;
+        }
+    } 
+}
+@media only screen and (min-width: 768px)  and (max-width: 1024px){
+   footer {
+        .container-block{
+      	 max-width: 994px;
+        }
+    } 
+}
+
+
+@media only screen and (max-width: 767px) {
+   footer {
+        .container-block{
+      	  width: 100%;
+      	  padding: 0;
+      	  padding-left: 10px;
+      	  overflow: hidden;
+      	  .sub1{
+      	    width: 55%;
+      	    float: right;
+      	  	padding: 0;
+      	    .txt{
+      	    	margin-left: 25px;
+      	    }
+      	  	span{
+      	  		display: none;
+      	  	}
+      	  	
+      	  }
+      	  .sub2{
+      	  	width: 140px;
+
+      	  }
+      	  .sub3{
+      	  	float: none;
+      	  	margin-bottom: 30px;
+      	  	.search{
+      	  		.title{
+      	  			display: none;
+      	  		}
+      	  		.block{
+      	  			
+      	  		}
+      	  	
+      	  	}
+
+      	  	.link{
+	    	  text-align: center;
+	    	  margin-bottom: 20px;
+	        }
+      	  }
+      	.bottom{
+      	  	.item{
+      	  		 width: 100%;
+      	  		 margin-top: -20px;
+      	  		 text-align: center;
+      	  		.nav-one{
+      	  				margin: 0;
+      	  			}
+      	  		li{
+      	  		 
+
+      	  		}
+      	  	}
+      	  	
+      	   }
+
+      	    .copy{
+	             width: 100%;
+	             margin-top: -10px;
+	             p{
+
+	             	text-align: center;	
+	             }
+	         }
+        }
+    } 
+}

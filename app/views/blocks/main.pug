@@ -1,0 +1,145 @@
+include ../mixins/all
+block container
+  main
+   .section-justlove
+    .container-block
+     .justlove-img
+      .col-sm-8
+       +img('img','images/just-love.png')
+     .row
+      .section-sub1.col-md-4.col-md-offset-4.col-sm-8
+        +mainblockRes({intro:'', title:'', txt:'', imgs:[
+          {title:'mobile', src:''},
+          {title:'tablet', src:''},
+          {title:'desktop', src:'images/00-numero74-Home_07.jpg'}]})
+      .section-sub2.col-md-3.col-sm-4 
+        +mainblockRes({intro:'Nous sommes', title:'FAIT MAIN LA-BAS',txt:'Collections are created in linited sries with a great respecr of traditions', imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_04.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_04.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_04.png'}]})
+     .row
+      .section-sub3.col-md-5.col-sm-6
+       +mainblock({intro:'Nous sommes', title:'NOTRE SOCITTE', src:'images/00-numero74-Home_12.jpg',txt:''})
+      .section-sub4.col-md-6.col-sm-6
+       +mainblockRes({intro:'Nous sommes', title:'NOTRE SOCITTE',txt:'Collections are created in linited sries with a great respecr of traditions',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_15.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_07.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_14.png'}]})
+   .section-beyou
+    .block
+     .beyou-img
+      .col-sm-8.col-sm-offset-4
+       +img('img','images/be-you.png').img
+    .container-block
+     .row
+      .section-sub1.col-md-5.col-md-offset-1.col-sm-4
+       +mainblockRes({intro:'Notre unvive', title:'LES COULEURS',txt:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu cursus dui.',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_20.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_09.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_17.png'}]})
+      .section-sub2.col-md-6.col-sm-8
+       +mainblock({intro:'Nous sommes', title:'LES GENS DE N74', src:'images/00-numero74-Home_23.jpg',txt:''})
+     .row
+      .section-sub3.col-md-5.col-md-offset-2.col-sm-7 
+       +mainblockRes({intro:'', title:'',txt:'',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_28.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_11.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_23.png'}]})
+      .section-sub4.col-md-3.col-sm-5.col-xs-12 
+       +mainblock({intro:'Espace presse', title:'LES GENS DE N74', class:'img', src:'',txt:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu cursus dui.'})
+   .section-banner
+   .section-dreamer
+    .container-block
+     .block
+      .dreamer-img
+       .col-sm-offset-2.col-sm-9 
+        +img('img','images/dreamer.png')
+     .row
+      .section-sub1.col-sm-7
+       +mainblockRes({intro:'Nous sommes', title:'NOTRE SOCITTE',txt:'Collections are created in linited sries with a great respecr of traditions',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_36.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_16.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_30.png'}]})
+      .section-sub2.col-sm-5
+       .row
+        .sub1-item.col-md-7.col-md-offset-5.col-sm-12
+         +mainblockRes({intro:'Nous sommes', title:'NOTRE SOCITTE',txt:'Collections are created in linited sries with a great respecr of traditions',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_39.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_19.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_33.png'}]})
+        .sub2-item.col-md-9.col-sm-9.hidden-sm.hidden-xs
+         +mainblockRes({intro:'Nous sommes', title:'NOTRE SOCITTE',txt:'Collections are created in linited sries with a great respecr of traditions',imgs:[
+          {title:'desktop',src:'images/00-numero74-Home_43.jpg'},
+          {title:'mobile',src:'images/mobile/M00-numero74-Home_21.png'},
+          {title:'tablet', src:'images/tablet/T00-numero74-Home_38.png'}]})
+      .sub3-item.col-sm-8.col-sm-offset-4.hidden-lg.hidden-md
+        +mainblockRes({intro:'Nous sommes', title:'NOTRE SOCITTE',txt:'Collections are created in linited sries with a great respecr of traditions',imgs:[
+         {title:'desktop',src:'images/00-numero74-Home_43.jpg'},
+         {title:'mobile',src:'images/mobile/M00-numero74-Home_21.png'},
+         {title:'tablet', src:'images/tablet/T00-numero74-Home_38.png'}]})
+   .section-life-is-magic
+    .container-block
+     .block
+      .magic-img
+        +img('img','images/life-is-magic.png')
+     .section-sub5.row-sm.hidden-lg.hidden-md.hidden-xs
+       .row
+        .sub-item.col-sm-6.col-sm-offset-2
+         +mainblock({intro:'Nous sommes', title:'NOTRE SOCITTE', src:'images/00-numero74-Home_49.jpg',txt:''})
+        .sub1-item1.col-sm-4.desciption
+         +mainblock({intro:'Nous sommes', title:'NOTRE SOCITTE', src:'',txt:'Collections are created in linited sries with a great respecr of traditions'})
+     .row
+      .section-sub1.col-md-3.col-md-offset-1.hidden-sm
+       +mainblock({intro:'Nous sommes', title:'NOTRE SOCITTE', src:'images/00-numero74-Home_49.jpg',txt:''})
+      .section-sub2.col-md-3.col-sm-4
+       +mainblock({intro:'', title:'', src:'images/00-numero74-Home_52.jpg',txt:''})
+      .section-sub3.col-md-5.col-sm-8
+       .row
+        .sub1-item.col-md-6
+         +mainblock({intro:'', title:'', src:'images/00-numero74-Home_47.jpg',txt:''})
+        .sub2-item.col-md-6.hidden-sm
+         +mainblock({intro:'Nous sommes', title:'Nous sommes', src:'',txt:'Collections are created in linited sries with a great respecr of traditions'})
+   .section-inspirer
+    .container-block
+     .row
+      .sub-block.col-md-offset-2.col-md-8
+       .sub-item
+        +mainblock({intro:'', title:'INSPIRER ET TRANSMETTRE', src:'',txt:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra'})
+        form.block
+         button(type="sumbit") ok
+         +input-group-custom(
+          {
+            type: 'text',
+            id: 'test',
+            name: 'test',
+            textLabel:'Label'
+          },
+          {
+            'maxlength': 50,
+            'required': true,
+            placeholder:'You email address',
+          }
+         )
+        .folow-social
+         .row
+          .col-xs-3
+           .tw
+           p 16k
+           span Abones
+          .col-xs-3
+           .fb
+           p 86.5k
+           span Fans
+          .col-xs-3
+           .p
+           p 875.6k
+           span Abones
+          .col-xs-3
+           .in
+           p 48.9k
+           span Abones
+   .section-instagam
+    .container-block
+     .row 
+      .sub.col-md-offset-1.col-md-10
+       .title INSTAGRAM

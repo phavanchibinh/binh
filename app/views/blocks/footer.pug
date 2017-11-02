@@ -1,0 +1,52 @@
+footer
+ .container-block
+  .row
+   .block
+    .row
+     .sub3.col-sm-5
+      .row
+       .link
+        li: a(href="#book-a")
+         +img('logo','images/IG-footer.png')
+        li: a(href="#book-a")
+         +img('logo','images/FB-footer.png')
+        li: a(href="#book-a")
+         +img('logo','images/Pinterest-footer.png')
+        li: a(href="#book-a")
+         +img('logo','images/TW-footer.png')
+       .search
+        +mainblock({intro:'', title:'NEWSLETTER', src:'', txt:''})
+        form.block
+         button(type="sumbit") Envoyer
+         +input-group-custom(
+          {
+            type: 'text',
+            id: 'test',
+            name: 'test',
+            textLabel:'Label'
+          },
+          {
+            'maxlength': 50,
+            'required': true,
+            placeholder:'Votre  address email',
+          }
+         ) 
+     .sub1.col-md-5.col-sm-4
+      .row
+       .logo.col-md-4.hidden-xs
+        +mainblock({intro:'', title:'', src:'images/logo-black.png',txt:''})
+       .item1.col-md-7
+        +mainblock({intro:'', title:'', src:'',txt:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida <span>dolor sit amet lacus accumsan et viverra.</span>'})
+     .sub2.col-md-2.col-sm-3
+       +nav([{title: 'Nous sommes', href:'#'},
+    		{title: 'Notre univers', href: '#'},
+    		{title: 'Allez bouge-toi', href: '#'},
+    		{title: 'Newsletter', href: '#'}])
+    .bottom
+     .item
+      +nav([{title: 'FAQ',  href:'#',level:'nav-one'},
+		{title: 'CGV', href: '#'},
+		{title: 'Mentions légales', href: '#'},
+		{title: 'Espace presse',level:'nav-tow',href: '#'}])
+     .copy
+      p Site by Colorz

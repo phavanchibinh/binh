@@ -1,0 +1,454 @@
+header {
+  .banner{
+    background: url('/images/00-numero74-Home_01.jpg') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 280px 0;
+    position: relative;
+    .menu-moblie{
+    
+        button{
+          display: none;
+        }
+     }
+
+    .logo {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      top: -306px;
+
+    }
+  }
+
+    .f-nav{
+      z-index: 9999;
+      position: fixed;
+      background-color: red;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  .f-mobile{
+    display: none;
+    img{
+      padding: 0;
+      height: 0;
+      width: 0;
+    }
+  }
+  .nav-menu{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+    z-index: 99;
+    .container-block {
+        margin: auto;
+        max-width: 1370px;
+        text-align: center;
+      .logo-menu{
+        padding-top: 10px;
+       }
+      .close{
+        display: none;
+       }
+      .menu{
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font: 15px "Avera-Sans-Bold", sans-serif;
+        display: inline-block;
+        float: none;
+        margin-top: 28px;
+        max-width: 80%;
+      
+        ul li {
+          display: inline-block;
+          position: relative;
+          margin:0 15px;
+          a{
+
+           }
+
+        }
+
+        ul li:hover ul {
+          display: block;
+         }
+
+        ul li ul {
+          position: absolute;
+          display: none;
+          li {
+            display: block;
+            width: 100px;
+          }
+        }
+      }
+    
+      .nav-sub{
+        float: right;
+        margin-top: 20px;
+        .search{
+          margin-left: -20px;
+        }
+        .nav-language{
+          margin-top: 12px;
+          float: right;
+          select{
+            border: none;
+            font: 15px "Avera-Sans-Bold", sans-serif;
+            color: #44423a;
+          } 
+        }
+      }
+    }      
+  }
+}
+
+@media only screen and(min-width: 1600px){
+    header{
+      .container-block{
+           width: 1370px;
+      }
+}
+}
+@media only screen and(min-width: 1025px) and(max-width: 1200px){
+    header{
+      .container-block{
+           width: 994px;
+      }
+}
+}
+@media only screen and(min-width: 1201px) and(max-width: 1599px){
+    header{
+      .container-block{
+           width: 1160px;
+      }
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   header{
+
+    .banner{
+       background: url('/images/tablet/T00-numero74-Home_01.png') center center no-repeat;
+       background-size: cover;
+       padding: 438px 0;
+       .menu-moblie {
+         position: absolute;
+         display: block;
+         width: 100%;
+         height: 50px;
+         line-height: 50px;
+         top: 5%;
+         z-index: 99;
+         button{
+          color: white;
+          padding-left: 50px;
+          display: block;
+          background: none;
+          position: absolute;
+          z-index: 99;
+          height: 30px;
+          width: 40px;
+          border: none;
+          .icon-bar{
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            top: 36%;
+            left: 26%;
+            background-color: white;
+            display: block;
+          }
+          .icon-bar1{
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            top: 61%;
+            left: 26%;
+            background-color: white;
+          }
+         }
+          .logo {
+             top: -1px;
+             position: absolute;
+             display: block;
+            
+            .img-logo{
+              width: 150px;
+            }
+            
+            
+          }
+        }
+
+      
+
+    .f-mobile{
+      z-index: 9999;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: white;
+      height: 70px;
+      padding-top: 20px;
+      .logo{
+        .img-logo{
+           height: 31px;
+           width: 90px;
+           margin-top: 20px;
+        }
+      }
+      button{
+        .icon-bar1{
+         background-color: black;
+        }
+        .icon-bar{
+         background-color: black;
+        }
+      }
+    
+    }
+    }
+    .nav-menu{
+      display: none;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      background-color: white;
+      height: 100%;
+    .container-block {
+        margin:  auto;
+        position: relative;
+      .close{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 5%;
+        z-index: 100;
+        left: 5%;
+        .fa{
+          font-size: 25pt;
+
+        }
+      }
+      .logo-menu{
+         text-align: center;
+         padding-top: 20px;
+       }
+
+      .menu{
+        font-size: 15px;
+        float: none;
+        text-align: left;
+        
+        ul li {
+            display: block;
+          a{
+
+           }
+          
+        }
+
+        ul li:hover ul {
+          display: block;
+         }
+
+        ul li ul {
+          position: absolute;
+          display: none;
+          li {
+            display: block;
+            width: 100px;
+          }
+        }
+      }
+    
+      .nav-sub{
+        float: none;
+        .search{
+          margin-left: -20px;
+          margin-top: 10px;
+        }
+        .nav-language{
+          margin-top: 19px;
+          float: none;
+          select{
+            border: none;
+            font: 15px "Avera-Sans-Bold", sans-serif;
+            color: #44423a;
+          } 
+        }
+      }
+    }      
+  }
+
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  header{
+    .banner{
+       background: url('/images/mobile/M00-numero74-Home_01.png') center center no-repeat;
+       background-size: cover;
+       padding: 145px 0;
+       .menu-moblie {
+        position: absolute;
+        display: block;
+         width: 100%;
+         height: 50px;
+         line-height: 50px;
+         top: 5%;
+         z-index: 99;
+
+         button{
+          color: white;
+          padding-left: 50px;
+          display: block;
+          background: none;
+          position: absolute;
+          z-index: 99;
+          height: 30px;
+          width: 40px;
+          border: none;
+          .icon-bar{
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            top: 36%;
+            left: 26%;
+            background-color: white;
+            display: block;
+          }
+          .icon-bar1{
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            top: 61%;
+            left: 26%;
+            background-color: white;
+          }
+         }
+          .logo {
+             top: -1px;
+             position: absolute;
+             display: block;
+            
+            .img-logo{
+              width: 150px;
+            }
+            
+            
+          }
+        }
+
+      
+
+    .f-mobile{
+      z-index: 9999;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: white;
+      height: 70px;
+      padding-top: 20px;
+      .logo{
+        .img-logo{
+           height: 31px;
+           width: 90px;
+           margin-top: 20px;
+        }
+      }
+      button{
+        .icon-bar1{
+         background-color: black;
+        }
+        .icon-bar{
+         background-color: black;
+        }
+      }
+    
+    }
+    }
+    .nav-menu{
+      display: none;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      background-color: white;
+      height: 100%;
+    .container-block {
+        margin:  auto;
+        position: relative;
+      .close{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 5%;
+        z-index: 100;
+        left: 5%;
+        .fa{
+          font-size: 25pt;
+
+        }
+      }
+      .logo-menu{
+         text-align: center;
+         padding-top: 20px;
+       }
+
+      .menu{
+        font-size: 15px;
+        float: none;
+        text-align: left;
+        
+        ul li {
+            display: block;
+          a{
+
+           }
+          
+        }
+
+        ul li:hover ul {
+          display: block;
+         }
+
+        ul li ul {
+          position: absolute;
+          display: none;
+          li {
+            display: block;
+            width: 100px;
+          }
+        }
+      }
+    
+      .nav-sub{
+        float: none;
+        .search{
+          margin-left: -20px;
+          margin-top: 10px;
+        }
+        .nav-language{
+          margin-top: 19px;
+          float: none;
+          select{
+            border: none;
+            font: 15px "Avera-Sans-Bold", sans-serif;
+            color: #44423a;
+          } 
+        }
+      }
+    }      
+  }
+
+  }
+
+}

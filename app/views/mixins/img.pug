@@ -1,0 +1,9 @@
+mixin img(alt, src)
+	- if (typeof(src) === 'undefined') href = 'images/transparent.png'
+		img(src=src, alt=alt)&attributes(attributes)
+
+mixin imgRes(imgs)
+	picture
+		source(srcset=imgs[0].src, media='(min-width:1024px)')
+		source(srcset=imgs[1].src, media='(max-width:767px)')
+		img(srcset=imgs[2].src, alt=imgs[2].title, title=imgs[2].title)&attributes(attributes)

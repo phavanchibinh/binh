@@ -1,0 +1,37 @@
+include ../mixins/all
+
+header
+ .banner
+  .menu-moblie#fixed
+   button(type="button").click-menu
+    span.icon-bar
+    span.icon-bar1
+   .logo
+     +link('Logo', 'index.html')
+      +img('logo','images/logo.png').img-logo
+ .nav-menu#cb
+  .menu-block
+   .container-block
+    .close
+     i.fa.fa-times.click-close
+    .logo-menu.col-md-1
+     +link('logo','index.html')
+      +img('logo','images/logo-black.png')
+    .menu
+     +nav([{
+   		 title: 'NOS LOVINGS PARTNERS', href:'#', level:'level1'},
+   		 {title: 'NOUS SOMMES',level:'level2', href: '#', class:'menu-dropdow', itemsMenu:[
+   		   {title: '1', href: '#'},
+   		   {title: '2', href: '#'}]},
+		 {title: 'NOTRE UNIVRES', href: '#', level:'level3'},
+		 {title: 'ALLEZ BOUGE-TOI', href: '#', level:'level4'},
+		 {title: 'LA GAZETTE', href: '#', level:'level5'},
+        {title: 'MON COMPTE', href: '#', level:'level6'}])
+    .nav-sub.col-md-1
+     .search.col-md-6
+      +img('search',"images/search-icon.png")
+     .nav-language.col-md-6
+      select
+         option FR
+         option EN
+         option VI
