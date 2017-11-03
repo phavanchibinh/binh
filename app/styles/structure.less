@@ -91,11 +91,11 @@ main {
           width: 100%;
           position: absolute;
           animation:run 10s infinite;
-          .img{
+          /*.img{
             float: right;
             margin-right: -113px;
             width: 100%;
-          }
+          }*/
         }
   	    .section-sub1{
           margin-top: 53px;
@@ -351,11 +351,22 @@ main {
           margin-bottom: 20px;
             .sub{
                 height: 266px;
-                border: solid 1px black;
                 text-align: center;
                 margin-top: 20px;
             }
       }
+    .slick-slider {
+      overflow: hidden;
+     .slider-item {
+       display: inline-block;
+       img{
+       }
+     }
+
+     button{
+      display: none;
+     }
+    }
 }
 @media only screen and(min-width: 1024px){
     main {
@@ -688,7 +699,14 @@ main {
                   display: block;
                 }
                }
+
             }
+               .sub3-item{
+                margin-top: 30px;
+                img{
+                  width: 100%;
+                }
+              }
           
          
           }
@@ -767,3 +785,4 @@ main {
             }
       }
 }
+

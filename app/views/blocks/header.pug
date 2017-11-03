@@ -29,9 +29,23 @@ header
         {title: 'MON COMPTE', href: '#', level:'level6'}])
     .nav-sub.col-md-1
      .search.col-md-6
-      +img('search',"images/search-icon.png")
+      +img('search',"images/search-icon.png").img-search
+     form.search1
+         +input-group-custom(
+          {
+            type: 'text',
+            id: 'test',
+            name: 'test',
+            textLabel:''
+          },
+          {
+            'maxlength': 50,
+            'required': true,
+            placeholder:'Votre  address email',
+          }
+         )   
      .nav-language.col-md-6
       select
-         option FR
+         option ENGLISH
          option EN
          option VI

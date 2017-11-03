@@ -1,4 +1,13 @@
 
+// seacrh
+ $('.img-search').click(function(){
+    var search1 = $('.search1');
+    $(search1).toggleClass('search2');
+ });
+
+
+
+
 $('.click-menu').click(function(){
   $('.nav-menu').slideToggle();
  });
@@ -9,8 +18,6 @@ $('.close').click(function(){
 
 $(window).resize(function () {
     if($(window).width() <=1024) {
-
-
 
   $('.nav-menu').css("display", "none");
 }else if($(window).width() >1024){
@@ -61,5 +68,18 @@ if($(window).width() <=1024) {
 
 
 
-
-
+// backtotop
+jQuery(document).ready(function($){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 900) {
+            $('#my').fadeIn('back');
+        } else {
+            $('#my').fadeOut('back');
+        }
+    });
+    $('#my').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        //$("html, body").scrollTop(0); //For without animation
+        return false;
+    });
+});

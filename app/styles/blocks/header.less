@@ -44,7 +44,6 @@ header {
     z-index: 99;
     .container-block {
         margin: auto;
-        max-width: 1370px;
         text-align: center;
       .logo-menu{
         padding-top: 10px;
@@ -60,12 +59,43 @@ header {
         display: inline-block;
         float: none;
         margin-top: 28px;
-        max-width: 80%;
-      
+        width: 80%;
+        word-wrap: normal;
+        .level2{
+           &::after{
+            display:none;
+            content: '';
+            border: 7px solid transparent;
+            border-top-color: #111111;
+            margin-top: 20px;
+            float: right;
+          }
+        }
+        .level4{
+           &::after{
+            display:none;
+            content: '';
+            border: 7px solid transparent;
+            border-top-color: #111111;
+            margin-top: 20px;
+            float: right;
+          }
+        }
+        .level6{
+           &::after{
+            display:none;
+            content: '';
+            border: 7px solid transparent;
+            border-top-color: #111111;
+            margin-top: 20px;
+            float: right;
+          }
+        }
         ul li {
           display: inline-block;
           position: relative;
           margin:0 15px;
+
           a{
 
            }
@@ -92,6 +122,36 @@ header {
         .search{
           margin-left: -20px;
         }
+        .search2 {
+          visibility: visible !important;
+          width: 200px !important;
+          
+        } 
+       .search1{
+            position: absolute;
+            visibility: hidden;
+            display: block;
+            height: 40px;
+            width: 5px;
+            margin: auto;
+            border-radius: 5px;
+            background-image: url(../images/bg-search2.jpg);
+            background-size: 100% 100%;
+            margin-top: -3px;
+            margin-left: 20px;
+            right: 92%;
+            transition: all 0.5s;
+            transition-timing-function: linear;
+         
+            }
+            
+             input{
+              width:100%;
+              border: none;
+              margin-top: 10px;
+              height: 20px;
+
+            }
         .nav-language{
           margin-top: 12px;
           float: right;
@@ -117,6 +177,12 @@ header {
     header{
       .container-block{
            width: 994px;
+           .nav-sub{
+              margin-right: 30px;
+              .nav-language{
+
+              }
+            }
       }
 }
 }
@@ -124,6 +190,12 @@ header {
     header{
       .container-block{
            width: 1160px;
+            .nav-sub{
+              margin-right: 30px;
+              .nav-language{
+
+              }
+            }
       }
 }
 }
@@ -220,6 +292,7 @@ header {
       z-index: 9999;
       background-color: white;
       height: 100%;
+    
     .container-block {
         margin:  auto;
         position: relative;
@@ -240,13 +313,37 @@ header {
          padding-top: 20px;
        }
 
-      .menu{
-        font-size: 15px;
+   .menu{
+        font-size: 2rem;
         float: none;
         text-align: left;
-        
+        display: block;
+        margin-left: 5px;
+        width: 100%;
+       
+        .level2{
+           &::after{
+            display: block;
+           
+          }
+        }
+
+        .level4{
+           &::after{
+            display: block;
+           
+          }
+        }
+
+        .level6{
+           &::after{
+            display: block;
+           
+          }
+        }
         ul li {
             display: block;
+            line-height: 42px;
           a{
 
            }
@@ -266,19 +363,21 @@ header {
           }
         }
       }
-    
-      .nav-sub{
-        float: none;
+       .nav-sub{
+        float: left;
+        margin-left: 19px;
+        margin-top: 0;
         .search{
-          margin-left: -20px;
+          margin-left: -70px;
           margin-top: 10px;
         }
         .nav-language{
           margin-top: 19px;
+          margin-left: -15px;
           float: none;
           select{
             border: none;
-            font: 15px "Avera-Sans-Bold", sans-serif;
+            font: 2rem "Avera-Sans-Bold", sans-serif;
             color: #44423a;
           } 
         }
@@ -383,6 +482,7 @@ header {
       z-index: 9999;
       background-color: white;
       height: 100%;
+      
     .container-block {
         margin:  auto;
         position: relative;
@@ -402,14 +502,37 @@ header {
          text-align: center;
          padding-top: 20px;
        }
-
       .menu{
-        font-size: 15px;
+        font-size: 2rem;
         float: none;
         text-align: left;
-        
+        display: block;
+        margin-left: 5px;
+        width: 100%;
+       
+        .level2{
+           &::after{
+            display: block;
+           
+          }
+        }
+
+        .level4{
+           &::after{
+            display: block;
+           
+          }
+        }
+
+        .level6{
+           &::after{
+            display: block;
+           
+          }
+        }
         ul li {
             display: block;
+            line-height: 42px;
           a{
 
            }
@@ -431,17 +554,20 @@ header {
       }
     
       .nav-sub{
-        float: none;
+        float: left;
+        margin-left: 19px;
+        margin-top: 0;
         .search{
-          margin-left: -20px;
+          margin-left: -70px;
           margin-top: 10px;
         }
         .nav-language{
           margin-top: 19px;
+          margin-left: -15px;
           float: none;
           select{
             border: none;
-            font: 15px "Avera-Sans-Bold", sans-serif;
+            font: 2rem "Avera-Sans-Bold", sans-serif;
             color: #44423a;
           } 
         }

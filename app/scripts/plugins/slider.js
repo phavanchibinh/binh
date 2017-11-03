@@ -18,7 +18,7 @@
       var that = this,
         el = that.element,
         options = that.options,
-        duration = 400,
+        duration = 100,
         timer,
         eventName;
 
@@ -63,9 +63,37 @@
   $.fn[pluginName].defaults = {
     autoplay: true,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    dots: false
+    dots: false,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   };
 
   $(function() {
