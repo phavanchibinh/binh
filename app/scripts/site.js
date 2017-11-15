@@ -1,11 +1,17 @@
 
+ new WOW().init();
 // seacrh
- $('.img-search').click(function(){
-    var search1 = $('.search1');
-    $(search1).toggleClass('search2');
- });
+      $('.img-search').click(function(){
+      var search1 = $('.search1');
+      $(search1).toggleClass('search2');
+     });
 
 
+
+// menu-hover
+$('.menu-dropdow').click(function(){
+    $('.drop-menu-item').slideToggle();
+});
 
 
 $('.click-menu').click(function(){
@@ -69,17 +75,17 @@ if($(window).width() <=1024) {
 
 
 // backtotop
-jQuery(document).ready(function($){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 900) {
-            $('#my').fadeIn('back');
-        } else {
-            $('#my').fadeOut('back');
-        }
-    });
-    $('#my').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 500);
-        //$("html, body").scrollTop(0); //For without animation
-        return false;
-    });
-});
+// jQuery(document).ready(function($){
+//     $(window).scroll(function(){
+//         if ($(this).scrollTop() > 900) {
+//             $('#my').fadeIn('back');
+//         } else {
+//             $('#my').fadeOut('back');
+//         }
+//     });
+//     $('#my').click(function(){
+//         $("html, body").animate({ scrollTop: 0 }, 500);
+//         //$("html, body").scrollTop(0); //For without animation
+//         return false;
+//     });
+// });
